@@ -8,7 +8,7 @@ spec:
   crd:
     spec:
       names:
-        kind: k8srequiredlabels
+        kind: K8sRequiredLabels
       validation:
         # Schema for the `parameters` field
         openAPIV3Schema:
