@@ -1,0 +1,19 @@
+apiVersion: constraints.gatekeeper.sh/v1beta1
+kind: K8sRequiredLabels
+metadata:
+  name: deployment-must-have-labels
+spec:
+  match:
+    kinds:
+      - apiGroups: [""]
+        kinds: ["Deployment"]
+  parameters:
+    label: 
+      - gcp_region
+      - owner
+      - application_division
+      - application_name
+      - application_role
+      - environment
+      - au
+      - environment
